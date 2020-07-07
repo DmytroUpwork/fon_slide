@@ -110,13 +110,13 @@ body .wrapper {
 }
 
 .body_slides li:nth-child(1) {
-  background-image: url("/img/dawn.jpg");
+  background-image: url("../img/dawn.jpg");
 }
 
 .body_slides li:nth-child(2) {
   -webkit-animation-delay: 6.0s;
   -moz-animation-delay: 6.0s;
-  background-image: url("/img/land.jpg");
+  background-image: url("../img/land.jpg");
 }
 
 @-webkit-keyframes anim_slides {
