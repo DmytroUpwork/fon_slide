@@ -11,12 +11,21 @@ body header {
   position: absolute;
   z-index: 9;
   right: 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 830px) {
   body header {
     left: 0;
   }
+}
+
+body header .logo {
+  position: absolute;
+  top: 28%;
+  left: 1%;
+  font-size: 30px;
+  color: #fff;
 }
 
 body header nav {
@@ -31,6 +40,9 @@ body header nav div ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   list-style: none;
 }
 
