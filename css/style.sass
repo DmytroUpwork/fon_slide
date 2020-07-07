@@ -1,0 +1,98 @@
+body 
+  padding: 0
+  margin: 0
+  img 
+    width: 100%
+
+  header 
+    position: absolute
+    z-index: 9
+    right: 0
+    @media screen and ( max-width: 830px )
+      left: 0
+    nav
+      padding: 0 20px
+      div 
+        padding-top: 20px
+        ul 
+          display: flex
+          list-style: none
+          @media screen and ( max-width: 830px )
+            display: block
+          li 
+            margin-left: 34px
+            @media screen and ( max-width: 830px )
+              padding-bottom: 20px
+            a 
+              text-decoration: none
+              transition: 1s
+              color: white
+              font-size: 20px
+              &:hover
+                color: #0cf615
+  .wrapper
+    position: absolute
+    background: rgba(8, 8, 9, 0.4)
+    color: #fff
+    z-index: 9
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    margin: auto
+    width: 62%
+    height: 28%
+    border-top-right-radius: 20px
+    border-top-left-radius: 20px
+    border-bottom-left-radius: 20px
+    border-bottom-right-radius: 20px
+    font-size: 32px
+    text-transform: uppercase
+    display: flex
+    justify-content: center
+    align-items: center
+  
+  
+  
+// animation fon body =================================
+.body_slides 
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    width: 100% 
+    height: 100% 
+    position: absolute 
+    background-size: cover
+    background-position: center bottom
+    background-repeat: no-repeat
+    opacity: 0 
+    animation: anim_slides 12s linear infinite 0s
+    &:nth-child(1) 
+      background-image: url('/img/dawn.jpg')
+    &:nth-child(2)
+      -webkit-animation-delay: 6.0s 
+      -moz-animation-delay: 6.0s 
+      background-image: url('/img/land.jpg')
+@-webkit-keyframes anim_slides 
+  0% 
+    opacity: 0
+  15% 
+    opacity: 0.9
+  50% 
+    opacity: 0.9
+  60% 
+    opacity: 0
+  100% 
+    opacity: 0  
+@-moz-keyframes anim_slides 
+  0% 
+    opacity: 0
+  6% 
+    opacity: 0.9
+  24% 
+    opacity: 0.9
+  30% 
+    opacity: 0
+  100% 
+    opacity: 0
